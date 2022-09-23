@@ -1,0 +1,359 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Inter' !important;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1C1F1F;
+    cursor: pointer;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background-color: #F40000;
+    box-shadow: 0 0 15px 2px black;
+    z-index: 9999;
+}
+
+.boxNav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: 0.5s all;
+}
+
+.nav-link {
+    transition: 0.2s all;
+    border-radius: 15px;
+}
+
+.boxNavScrolled{
+    background-color: rgba(245, 0, 0, 0.9);
+    padding: 5px;
+}
+
+.boxNav img {
+    transition: 0.2s all;
+    border-radius: 15px;
+}
+
+.navbar {
+    height: 170px !important;
+}
+
+.ulnavbar {
+    width: 100% !important;
+    gap: 100px;
+    padding-left: 65px;
+}
+
+.nav-item a {
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    font-family: 'Inter';
+    transition: 0.2s all;
+}
+
+.nav-item a:hover {
+    color: #F40000;
+    background-color: white;
+}
+
+.logoNav {
+    width: 210px;
+    margin: 0 100px 0 0;
+}
+
+.mainBody .mainBodyLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainBody .mainBodyLeft img {
+    width: 550px;
+    margin-left: -50px;
+    margin-bottom: -50px;
+}
+
+.mainBody .mainBodyLeft h2 {
+    font-weight: bold;
+    color: white;
+    font-size: 80px;
+    font-family: 'Inter';
+    text-align: center;
+}
+
+.btnSaibaMais {
+    border-radius: 50px;
+    padding: 15px;
+    background-color: #F1F1F1;
+    color: #F40000;
+    border: 0;
+    box-shadow: 0 10px 40px 2px black;
+    margin-top: 30px;
+    transition: 0.2s all;
+    box-sizing: border-box;
+}
+
+
+.btnSaibaMais a {
+    text-decoration: none;
+    color: #F40000;
+    font-weight: bold;
+}
+
+.btnSaibaMais:hover {
+    background-color: #F40000;
+    transform: scale(1.1);
+}
+
+.btnSaibaMais:active {
+    transform: scale(1.5);
+}
+
+.btnSaibaMais:hover a {
+    color: white;
+}
+
+#sobre {
+    width: 100%;
+    height: 100vh;
+    background-color: #1C1F1F;
+}
+
+#sobre .textAboutMe {
+    color: white;
+    font-weight: bold;
+}
+
+#sobre .col-sm-6,
+#sobre .col-sm-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#sobre img {
+    width: 500px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px 2px #F40000;
+}
+
+#sobre .textAboutMe {
+    width: 500px;
+    font-size: 26px;
+    box-shadow: 0 0 15px 2px #F40000;
+    border-radius: 50px;
+    padding: 23px;
+}
+
+#habilidades {
+    width: 100%;
+    height: 100vh;
+    background-color: #F1F1F1;
+}
+
+#habilidades .col-sm-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#habilidades .col-sm-12:nth-child(2) {
+    align-items: flex-start;
+}
+
+#habilidades h2 {
+    color: #1C1F1F;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.carousel-item img {
+    height: 500px;
+}
+
+.carousel-item {
+    width: min-content;
+}
+
+.carousel-item p,
+.carousel-item h5 {
+    color: black;
+    font-weight: bold;
+    background: white;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+
+#carouselExampleCaptions {
+    width: 100%;
+}
+
+#carouselExampleCaptions .change-page {
+    height: 500px;
+}
+
+#carouselExampleCaptions .change-page .change-page-icon{
+    background-color: black;
+    border-radius: 50px;
+    padding: 20px;
+    width: 25px;
+}
+
+.carousel-inner {
+    width: min-content;
+}
+
+.carousel-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backToMainButton {
+    z-index: 9999;
+    position: fixed;
+    bottom: -500px;
+    transition: 0.3s all;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    
+}
+
+.backToMainButton a {
+    position: relative;
+    background-color: #F40000;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    color: white;
+    border-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 40px 0.5px black;
+    transition: 0.3s all;
+}
+
+
+.backToMainButton a:active {
+    position: relative;
+    background-color: white;
+    border: 1px solid #F40000;
+    transform: scale(2.05);
+}
+
+
+.backToMainButton img{
+    width: 50%;
+}
+
+.buttonAppeared{
+    bottom: 50px;
+}
+
+#portfolio{
+    width: 100%;
+    height: 100vh;
+    background-color: #F40000;
+}
+
+#portfolio h2 {
+    color: white;
+}
+
+
+@media (max-width: 1000px) {
+
+    .mainBody .mainBodyLeft {
+        width: 100%;
+    }
+
+    .mainBody .mainBodyLeft div:nth-child(1){
+        width: 100% !important;
+    }
+
+    .mainBody .mainBodyLeft img {
+        width: 80%;
+        margin-left: -50px;
+        margin-bottom: -50px;
+    }
+    
+    .mainBody .mainBodyLeft h2 {
+        width: 100%;
+        font-weight: bold;
+        color: white;
+        font-size: 100px;
+        font-family: 'Inter';
+    }
+    
+    .btnSaibaMais {
+        border-radius: 100px;
+        padding: 35px;
+        background-color: #F1F1F1;
+        color: #F40000;
+        border: 0;
+        box-shadow: 0 10px 40px 2px black;
+        margin-top: 30px;
+        transition: 0.2s all;
+        box-sizing: border-box;
+    }
+
+    .btnSaibaMais a {
+        font-size: 40px;
+    }
+
+    .backToMainButton a {
+        width: 100px;
+        height: 100px;
+    }
+
+    .ulnavbar{
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        padding-bottom: 10px;
+        background-color: #F40000e6
+    }
+    
+    .navbar-toggler{
+        width: 120px;
+        height: 120px;
+        border-color: #F1F1F1;
+        margin-left: 50px;
+    }
+
+    .navbar-toggler-icon{
+        width: 4em;
+        height: 4em;
+        color: #F1F1F1
+    }
+}
