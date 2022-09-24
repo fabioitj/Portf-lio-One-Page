@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
-    font-family: 'Inter' !important;
+}
+
+body{
+    font-family: 'Inter Regular' !important;
 }
 
 ::-webkit-scrollbar {
@@ -39,7 +42,6 @@ html {
 }
 
 .boxNavScrolled{
-    background-color: rgba(245, 0, 0, 0.9);
     padding: 5px;
 }
 
@@ -62,7 +64,7 @@ html {
     font-weight: bold;
     color: white;
     font-size: 24px;
-    font-family: 'Inter';
+    font-family: 'Inter Regular';
     transition: 0.2s all;
 }
 
@@ -93,7 +95,7 @@ html {
     font-weight: bold;
     color: white;
     font-size: 80px;
-    font-family: 'Inter';
+    font-family: 'Inter Regular';
     text-align: center;
 }
 
@@ -171,6 +173,7 @@ html {
     width: 100%;
     height: 100vh;
     background-color: #F1F1F1;
+    box-shadow: inset 0px 0px 50px 2px black;
 }
 
 #habilidades .col-sm-12 {
@@ -207,15 +210,15 @@ html {
 }
 
 
-#carouselExampleCaptions {
+#carouselExampleCaptions, #carouselExampleCaptions2{
     width: 100%;
 }
 
-#carouselExampleCaptions .change-page {
+#carouselExampleCaptions .change-page, #carouselExampleCaptions2 .change-page {
     height: 500px;
 }
 
-#carouselExampleCaptions .change-page .change-page-icon{
+#carouselExampleCaptions .change-page .change-page-icon, #carouselExampleCaptions2 .change-page .change-page-icon{
     background-color: black;
     border-radius: 50px;
     padding: 20px;
@@ -288,8 +291,117 @@ html {
 
 #portfolio h2 {
     color: white;
+    font-weight: bold;
+    font-size: 40px;
 }
 
+#portfolio .col-sm-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#portfolio .col-sm-12:nth-child(2) {
+    align-items: flex-start;
+}
+
+#portfolio .carousel-item {
+    background-color: #F1F1F1;
+    padding: 70px;
+    max-width: 1500px;
+}
+
+#portfolio .carousel-item img {
+    height: min-content;
+    width: 500px;
+}
+
+#contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #1C1F1F;
+    box-shadow: inset 0px 0px 50px 2px black;
+}
+
+#contato .col-sm-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contato .col-sm-12:nth-child(2) {
+    align-items: flex-start;
+}
+
+#contato h2 {
+    color: #F1F1F1;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#contato input, #contato textarea {
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#contato input::placeholder, #contato textarea::placeholder{
+    color: black;
+    font-size: 18px;
+}
+
+#contato button {
+    background-color: #F40000;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 16px;
+}
+
+#contato .firstRow, #contato .secondRow {
+    padding: 30px;
+}
+
+.linksIcons{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.imgIcon {
+    width: 100px;
+}
+
+@media (max-width: 1400px){
+    .boxNav{
+        height: 130px;
+    }
+
+    .navbar {
+        height: 130px !important;
+    }
+
+    .mainBody .mainBodyLeft img {
+        width: 100%;
+    }
+    
+    .mainBody .mainBodyLeft h2 {
+        width: 100%;
+        font-weight: bold;
+        color: white;
+        font-size: 40px;
+        font-family: 'Inter Regular';
+    }
+
+    .mainBody .mainBodyLeft {
+        width: 100%;
+        height: 100%;
+    }
+}
 
 @media (max-width: 1000px) {
 
@@ -312,7 +424,7 @@ html {
         font-weight: bold;
         color: white;
         font-size: 100px;
-        font-family: 'Inter';
+        font-family: 'Inter Regular';
     }
     
     .btnSaibaMais {
